@@ -1,4 +1,4 @@
-* Global CSS */
+/* Global CSS */
 
 body {
   margin: 0;
@@ -244,6 +244,22 @@ h2 {
   justify-content: center;
   align-items: flex-start;
   gap: 106.667px;
+
+
+
+
+
+
+
+  background: var(--white);
+
+
+
+
+
+
+
+  
 }
 .skills--section--heading {
   color: var(--heading-color);
