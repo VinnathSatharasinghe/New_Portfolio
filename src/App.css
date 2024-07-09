@@ -36,16 +36,16 @@ p {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border-radius: 4px;
+  -o-border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  transition: background-color 0.5s;
+  border-radius: 4px;
+  -o-transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .btn-outline-primary {
   color: var(--primary);
@@ -162,6 +162,12 @@ h2 {
   left: 0;
   right: 0;
 }
+
+.logo{
+  width: 200px;
+  height: 90px;
+  margin-top: -10px;
+}
 .navbar--items > ul {
   list-style: none;
   display: flex;
@@ -231,8 +237,9 @@ h2 {
   display: flex;
 }
 .hero--section--img > img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 550px;
+  border-radius: 10px 10px 10px 10px;
 }
 /* Hero Section Style Ends */
 
@@ -261,11 +268,15 @@ h2 {
 
   
 }
+
+
+
 .skills--section--heading {
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
   font-size: 64px;
   font-weight: 700;
   line-height: 77px;
+  
 }
 .skills--section--container {
   display: grid;
@@ -273,6 +284,7 @@ h2 {
   align-items: flex-start;
   gap: 42.6px;
   grid-template-columns: repeat(4, 1fr);
+  
 }
 .skills--section--card {
   display: flex;
@@ -324,16 +336,29 @@ h2 {
 /* Skills Style Ends */
 
 /* About Us */
+
+.aboutpic{
+  border-radius: 30px 30px 30px 30px;
+}
+
 .about--section {
   display: grid;
   padding: 133.3px 85.3px;
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
+  background: var(--white);
+
+
 }
 .about--section--img > img {
   width: 100%;
   height: 100%;
+}
+
+.about-section--heading{
+  color: var(--black);
+
 }
 /* About Us Ends */
 
@@ -571,7 +596,7 @@ input[type="checkbox"] {
 }
 .footer--content {
   color: var(--black);
-  font-size: 18.667px;
+  font-size: 14.667px;
   font-weight: 400;
   line-height: 28px;
 }
